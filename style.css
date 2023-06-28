@@ -1,0 +1,763 @@
+@font-face {
+    font-family: Domaine;
+    src: url(./Domaine.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-color: #1C1C19;
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 140vh;
+    width: 100vw;
+    background-color: #c4bcb3;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    background-color: #C2BBB1;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: #97908A solid 1px;
+}
+
+#nav img{
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav h3{
+    font-size: 15px;
+    font-weight: 50;
+    color: #5d5c5b;
+    font-family: Canopee;
+    padding-left: 25px;
+}
+
+#nav i{
+    padding-right: 25px;
+}
+
+#elem{
+    width: 100%;
+    height: 400px;
+    background-color: #C3BBB1;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elem1{
+    width: 33%;
+    height: 100%;
+   /* background-color: chartreuse;*/
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#elem1:hover img{
+    scale: 1.1;
+}
+
+#elem1 h3{
+    font-family: "Domaine";
+    padding: 15px 0;
+    font-size: 20px;
+}
+#elem1 h3 span{
+    background-color: #B83C12;
+    color: #C2BBB1;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+#elem1 p{
+    padding-right: 30px;
+    font-family: Editorial New Light;
+}
+
+
+#elem2{
+    width: 27%;
+    height: 100%;
+    border-left: #97908A solid 1px;
+    border-right: #97908A solid 1px;
+    padding: 10px 70px;
+}
+#elem2 h2{
+    font-family: "Canopee";
+    font-weight: 500;
+    font-size: 70px;
+    letter-spacing: -2.5px;
+    padding-bottom: 17px;
+}
+#elem2 h4{
+    font-family: Editorial New Light;
+    font-size: 33px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+#elem2 h6{
+    font-family:Editorial New Light ;
+    font-size: 16px;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
+
+#elem3{
+    width: 33%;
+    height: 100%;
+    padding: 0 40px;
+   /* background-color: chartreuse;*/
+}
+
+#elem3 h3{
+    font-family: "Domaine";
+    padding: 15px 0;
+    font-size: 20px;
+}
+#elem3 h3 span{
+    background-color: #B83C12;
+    color: #C2BBB1;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-left: 5px;
+}
+#elem3 p{
+    padding-right: 30px;
+    font-family: Editorial New Light;
+}
+
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#elem3:hover img{
+    scale: 1.1;
+}
+
+
+#page1 h1{
+    font-size: 580px;
+    font-weight: 100;
+    letter-spacing: -25px;
+    font-family: Canopee;
+    background-color: #1c1c19;
+    color: #c4bcb3;
+    line-height: 500px;
+    width: 98%;
+    margin-left: 1%;
+}
+
+#page2{
+    height: 180vh;
+    width: 100%;
+    background-color: #c4bcb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 30px;
+}
+
+#page2-left{
+    width: 35%;
+    height: 100%;
+   padding-right: 40px;
+   border-right: 1px solid #222;
+}
+
+#page2-left img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#page2-left h2{
+    font-size: 110px;
+    font-family: canopee;
+    line-height: 120px;
+    font-weight: 300;
+}
+#page2-left h2 span{
+    font-size: 180px;
+    font-weight: 900;
+}
+
+#page2-left p{
+    font-family: "Domaine";
+    font-size: 34px;
+    color: #1C1B19;
+    font-weight: 100;
+    padding: 10px;
+}
+#page2-left p span{
+    font-size: 60px;
+    background-color: #1C1B19;
+    color:#c4bcb3;
+    padding: 8px;
+    
+}
+
+#page2-right{
+    width: 70%;
+    height: 100%;
+    padding: 0 50px;
+}
+
+#page2-right img{
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2-right h2{
+    font-size: 110px;
+    font-family: canopee;
+    font-weight: 500;
+    line-height: 110px;
+    color: #1C1C19;
+    letter-spacing: -5px;
+}
+
+
+#page3{
+    position: relative;
+    background-color: #c4bcb3;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+#page3 h1{
+    font-size: 450px;
+    font-family: canopee;
+    font-weight: 400;
+    width: fit-content;
+    color: #C3BBB2;
+    background-color: #1B1B19;
+    letter-spacing: -17px;
+    margin-left: 2%;
+    padding: 0 20px;
+    line-height: 400px;
+}
+
+#page3 img{
+    position: absolute;
+    height: 400px;
+    top: 0;
+    right: 2%;
+}
+
+#page4{
+    width: 100%;
+    height: 150vh;
+    background-color: #c4bcb3;
+}
+
+#elems{
+    display: flex;
+}
+
+#elems-left{
+    width: 65%;
+    height: 100%;
+
+    padding: 30px;
+}
+
+#elems-upper{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+#elems1{
+    width: 45%;
+    height: 100%;
+    background-color: #c4bcb3;
+    padding: 0 40px;
+}
+
+#elems1 h2{
+     font-family:canopee;
+     font-size: 53px;
+     font-weight: 800;
+     padding-bottom: 17px;
+     color: #1C1C19;
+}
+#elems1 h3{
+    font-family: "Domaine";
+    font-size: 40px;
+    font-weight: 10;
+    color: #1C1C19;
+}
+#elems #elems1 h6{
+    font-family:Editorial New Light ;
+    font-size: 16px;
+    padding-top: 25px;
+    font-weight: 400;
+    color: #1C1C19;
+}
+#elems2{
+    width: 55%;
+    height: 100%;
+    border-left: #1C1B19 solid 1px;
+   
+}
+
+/*#elems2 #imge-div{
+    width: 510px;
+    padding: 0 45px;
+    object-fit: cover;
+    transition: all ease 0.5s
+}*/
+
+#elems2 #imagee-div{
+    height: 60%;
+    width: 85%;
+    overflow: hidden;
+    margin-left: 45px;
+}
+#imagee-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+
+#elems2:hover img{
+    scale: 1.1;
+}
+#elems2 h3{
+    font-family: "Domaine";
+    font-size: 30px;
+    color: #1C1C19;
+    padding: 10px 45px;
+}
+#elems2 p{
+    font-family:Editorial New Light  ;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 5px 45px;
+    color: #474644;
+}
+
+#elems-left #middle-img{
+    width: 97%;
+    height: 60%;
+    margin-top: 40px;
+}
+
+#elems-right{
+   width: 35%;
+   height: 100%;
+}
+
+#elems3{
+    padding: 0 40px;
+    border-left: #1C1B19 solid 1px;
+}
+#elems3 h1{
+    font-family: canopee;
+    font-size: 105px;
+    font-weight: 300;
+    letter-spacing: -4px;
+    color: #1B1B19;
+    line-height: 130px;
+}
+#elems3 h1 span{
+    font-size: 190px;
+}
+#elems h4{
+    font-family: "Domaine" ;
+    font-size: 33px;
+    font-weight: 100;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: #1B1B19;
+}
+#elems3 h4 span{
+    font-size: 55px;
+    background-color: #1C1C1A;
+    color: #C6BFB5;
+    padding: 5px;
+    margin-right: 10px;
+    float: left;
+}
+#elems3 p{
+    font-family: Editorial New Light  ;
+    font-size: 30px;
+    font-weight: 100;
+    color: #1B1B19;
+    margin-bottom: 50px;
+}
+
+#oval{
+    width: 100%;
+    height: 200px;
+    background-color: #CAC1B6;
+    border: 1px solid #2f2f2fc6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#oval h1{
+    font-size: 83px;
+    font-weight: 100;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-29%);
+    transition: all ease 0.5s;
+}
+
+#oval img{
+    width: 50%;
+    height: 60px;
+    transform: translateX(-120%);
+    transition: all ease 0.5s;
+}
+
+#oval:hover img{
+    transform: translateX(70%);
+}
+
+#oval:hover h1{
+   transform: translateX(100%);
+}
+
+
+#page5{
+    height: 30vh;
+    width: 100%;
+    background-color: #B83C12;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card{
+    height: 100%;
+    width: 25%;
+    background-color: #C5BDB4;
+    display: flex;
+    padding: 40px 40px;
+    color: #1C1B19;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+#card2{
+    height: 100%;
+    width: 25%;
+    background-color: #C5BDB4;
+    display: flex;
+    padding: 40px 2px;
+    color: #1C1B19;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+
+#card-left{
+    width: 65%;
+    height: 100%;
+    padding-top: 25px;
+}
+#card-left h3{
+    font-family: Editorial New Light ;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 50px;
+}
+
+#card-left h3 span{
+    font-family: canopee;
+    font-size: 75px;
+    letter-spacing: -3px;
+    justify-content: center;
+}
+
+#card-right{
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+   
+}
+#card-right h2{
+    font-size: 150px;
+    font-weight: 100;
+    padding-left: 1px;
+    
+}
+
+
+#page6{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #C1BAB0;
+}
+
+#page6 #left{
+    width: 50%;
+    height: 100%;
+    padding: 20px 40px;
+    padding-top: 60px;
+}
+#left1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+#left1 img{
+    width: 210px;
+    height: 330px;
+    object-fit: cover;
+    border: 1px solid #1c1c19;
+}
+
+#left h1{
+    font-family: canopee;
+    font-size: 440px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    line-height: 350px;
+    color: #1C1C19;
+}
+ #left2{
+    width: 100%;
+    height: 50%;
+}
+#left2 h1{
+    font-family: canopee;
+    font-size: 400px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    line-height: 400px;
+    color: #1C1C19;
+}
+
+
+#page6 #right{
+    width: 50%;
+    height:100%;
+    padding-top: 60px;
+}
+
+#right img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   padding-right: 30px;
+}
+
+#page7{
+    height: 110vh;
+    width: 100%;
+    display: inline-block;
+    background-color: #C1BAB0;
+}
+
+#page7 #top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+#top img{
+    width: 25%;
+    margin-bottom: 30px;
+    margin: 45px;
+    object-fit: cover;
+    border: 1px solid #1b1a1a;
+}
+
+#top h1{
+    font-family: canopee;
+    font-size: 420px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    line-height: 400px;
+    color: #1C1C19;
+}
+
+#page7 #bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom h1{
+    font-family: canopee;
+    font-size: 385px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    line-height: 360px;
+    padding-right: 15px;
+    background-color: #1B1B19;
+    color: #C0B8AF;
+    margin: 40px;
+    margin-top: 5px;
+}
+
+#bottom p{
+    font-family:  "Domaine";
+    font-weight: 100;
+    font-size: 25px;
+    padding: 15px;
+    padding-right: 40px;
+    color: #1C1C19;
+}
+
+#bottom p span{
+    font-family: canopee;
+    font-size: 120px;
+}
+
+#page8{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #C3BBB2;
+    border-top: 1px solid #1C1C1A;
+    border-bottom: 1px solid #1C1C1A;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page8::-webkit-scrollbar{
+    display: none;
+}
+#page8 h1{
+    font-size: 90px;
+    font-family: "Domaine";
+    font-weight: 100;
+    display: inline-block;
+    color: #1B1B19;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+#page8 h1 span{
+    font-family: canopee;
+    background-color: #1B1B19;
+    color: #C4BDB3;
+    padding: 0 12px;
+}
+
+@keyframes scroll {
+    0%{
+        transform:translateX(0) ;
+    }
+
+    100%{
+        transform: translateX(calc(-100% - 34px));
+    }
+
+}
+#page8:hover h1{
+    animation-play-state: paused;
+}
+
+#page9{
+    height: 15vh;
+    width: 100%;
+    background-color: #C3BBB2;
+    display: flex;
+}
+
+#page9 #left{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   padding: 25px;
+   align-items: center;
+}
+
+#page9 #left h3{
+    font-family: canopee;
+    font-size: 23px;
+    font-weight: 100;
+    margin-right: 15px;
+}
+
+#page9 #left img{
+   width: 27px;
+   height: 35px;
+   margin-right: 15px;
+}
+#page9 #left h4{
+    font-family: "Domaine";
+    font-size: 23px;
+    font-weight: 100;
+    margin-right: 15px;
+}
+
+#page9 #right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+ #page9 #right h3{
+    font-family: canopee;
+    font-size: 23px;
+    font-weight: 100;
+    padding-right: 20px;
+ }
+ 
+
+
+
+
+
